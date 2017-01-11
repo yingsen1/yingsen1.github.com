@@ -6,6 +6,24 @@
     <description>My personal blog</description>
     
       <item>
+        <title>Git的使用</title>
+        <link>http://localhost:4000/2017/01/11/git-usage.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/01/11/git-usage.html</guid>
+        <pubDate>Wed, 11 Jan 2017 00:00:00 +0800</pubDate>
+        <description>&lt;!-- ![1](/public/img/days/ca.jpg) --&gt;
+
+&lt;h3&gt;步骤&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;认证&lt;br&gt;
+&lt;code&gt;
+ssh-keygen -t ras -C &amp;quot;youremail@example.com&amp;quot;
+&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      </item>
+    
+      <item>
         <title>2017年阅读书单</title>
         <link>http://localhost:4000/2017/01/10/Book-List-2017.html</link>
         <guid isPermaLink="true">http://localhost:4000/2017/01/10/Book-List-2017.html</guid>
