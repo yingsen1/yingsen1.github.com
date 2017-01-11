@@ -58,7 +58,7 @@
               <div class="list-group">
                 <!--<h2 class="center">摄影</h2>-->     <!--原来aside2上面的大标题-->
                 
-                  <a href="/2017/01/09/wangjingSOHO.html" class="list-group-item-lay pjaxlink">望京SOHO奇遇记</a>
+                  <a href="/2016/08/27/wangjingSOHO.html" class="list-group-item-lay pjaxlink">望京SOHO--第一次爬楼</a>
                 
               </div>
             </div>
@@ -107,8 +107,8 @@
                   </div>
                   <div id="摄影" class="panel-collapse collapse">
                     
-                      <a  href='/2017/01/09/wangjingSOHO.html' class="list-group-item pjaxlink">
-                        望京SOHO奇遇记
+                      <a  href='/2016/08/27/wangjingSOHO.html' class="list-group-item pjaxlink">
+                        望京SOHO--第一次爬楼
                       </a>
                     
                   </div>
@@ -123,8 +123,8 @@
                   </div>
                   <div id="爬楼" class="panel-collapse collapse">
                     
-                      <a  href='/2017/01/09/wangjingSOHO.html' class="list-group-item pjaxlink">
-                        望京SOHO奇遇记
+                      <a  href='/2016/08/27/wangjingSOHO.html' class="list-group-item pjaxlink">
+                        望京SOHO--第一次爬楼
                       </a>
                     
                   </div>
@@ -186,12 +186,46 @@
 <h3>步骤</h3>
 
 <ul>
-<li>认证<br>
-<code>
-ssh-keygen -t ras -C &quot;youremail@example.com&quot;
-</code></li>
+<li><strong>认证</strong><br></li>
+</ul>
+<div class="highlight"><pre><code class="language-" data-lang="">ssh-keygen -t ras -C "youremail@example.com"
+</code></pre></div>
+<p>　　在C:/users/dell/.ssh/中产生了公钥和私钥，将github setting里面添加ssh_key，即可完成认证过程。</p>
+
+<ul>
+<li><strong>创建本地git仓库</strong></li>
+</ul>
+<div class="highlight"><pre><code class="language-" data-lang="">git init //初始化git
+git add --all //添加文件
+git commit -m "info" //commit到&lt;head&gt;
+
+</code></pre></div>
+<ul>
+<li><strong>github.com创建远程仓库</strong></li>
 </ul>
 
+<p>　　如果要使用Github Page， 要将仓库名改为username.github.io</p>
+
+<ul>
+<li><strong>关联远程仓库和本地仓库</strong></li>
+</ul>
+<div class="highlight"><pre><code class="language-" data-lang="">git remote add origin &lt;http:&gt; //添加仓库 
+</code></pre></div>
+<ul>
+<li><strong>上传、更新仓库</strong></li>
+</ul>
+<div class="highlight"><pre><code class="language-" data-lang="">git push -u origin master //第一次需要加上 -u，方便后续
+git push origin master //简化命令
+</code></pre></div>
+<h3>遇到的问题</h3>
+
+<ol>
+<li>git pull之后没有更新本地的内容<br></li>
+</ol>
+
+<p>　　因为没有关联本地的仓库和远程pull下来的内容。</p>
+<div class="highlight"><pre><code class="language-" data-lang="">git branch --set-upstream-to=origin/&lt;branch&gt; master
+</code></pre></div>
     </div>
     <hr>
     <div id="disqus_thread">

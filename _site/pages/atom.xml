@@ -15,12 +15,46 @@
 &lt;h3&gt;步骤&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;认证&lt;br&gt;
-&lt;code&gt;
-ssh-keygen -t ras -C &amp;quot;youremail@example.com&amp;quot;
-&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;认证&lt;/strong&gt;&lt;br&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;ssh-keygen -t ras -C &quot;youremail@example.com&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;　　在C:/users/dell/.ssh/中产生了公钥和私钥，将github setting里面添加ssh_key，即可完成认证过程。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;创建本地git仓库&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;git init //初始化git
+git add --all //添加文件
+git commit -m &quot;info&quot; //commit到&amp;lt;head&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;github.com创建远程仓库&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;　　如果要使用Github Page， 要将仓库名改为username.github.io&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;关联远程仓库和本地仓库&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;git remote add origin &amp;lt;http:&amp;gt; //添加仓库 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;上传、更新仓库&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;git push -u origin master //第一次需要加上 -u，方便后续
+git push origin master //简化命令
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;遇到的问题&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;git pull之后没有更新本地的内容&lt;br&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;　　因为没有关联本地的仓库和远程pull下来的内容。&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;git branch --set-upstream-to=origin/&amp;lt;branch&amp;gt; master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
       </item>
     
       <item>
@@ -37,13 +71,6 @@ ssh-keygen -t ras -C &amp;quot;youremail@example.com&amp;quot;
         <guid isPermaLink="true">http://localhost:4000/2017/01/10/study-kcf.html</guid>
         <pubDate>Tue, 10 Jan 2017 00:00:00 +0800</pubDate>
         <description>&lt;!-- ![1](/public/img/days/ca.jpg) --&gt;
-
-&lt;h3&gt;故事&lt;/h3&gt;
-
-&lt;p&gt;“人生真的是一场很长的修炼，我还处于小白阶段。”记第一次租房被耍。&lt;/p&gt;
-
-&lt;p&gt;2015.09.29补充：
-我确实是一个很幸运的人，在被奇怪的房东耍过之后，居然又开启一段神奇的际遇：在四位善良的『陌生同学』的帮助下，我在北京没有交一分钱房租而度过了大半个暑假。真的，谢谢大家。&lt;/p&gt;
 </description>
       </item>
     
@@ -69,18 +96,28 @@ ssh-keygen -t ras -C &amp;quot;youremail@example.com&amp;quot;
       </item>
     
       <item>
-        <title>望京SOHO奇遇记</title>
-        <link>http://localhost:4000/2017/01/09/wangjingSOHO.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/01/09/wangjingSOHO.html</guid>
-        <pubDate>Mon, 09 Jan 2017 00:00:00 +0800</pubDate>
+        <title>望京SOHO--第一次爬楼</title>
+        <link>http://localhost:4000/2016/08/27/wangjingSOHO.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/08/27/wangjingSOHO.html</guid>
+        <pubDate>Sat, 27 Aug 2016 00:00:00 +0800</pubDate>
         <description>&lt;!-- ![1](/public/img/days/ca.jpg) --&gt;
 
-&lt;h3&gt;故事&lt;/h3&gt;
+&lt;h3&gt;纪念第一次爬楼&lt;/h3&gt;
 
-&lt;p&gt;“人生真的是一场很长的修炼，我还处于小白阶段。”记第一次租房被耍。&lt;/p&gt;
+&lt;p&gt;　　还记得是我领着温博然进门的，现在他带入我进入另外一个摄影的阶段了。之前我就什么题材都乱拍一顿。现在算是进入一个有分类的阶段。  &lt;/p&gt;
 
-&lt;p&gt;2015.09.29补充：
-我确实是一个很幸运的人，在被奇怪的房东耍过之后，居然又开启一段神奇的际遇：在四位善良的『陌生同学』的帮助下，我在北京没有交一分钱房租而度过了大半个暑假。真的，谢谢大家。&lt;/p&gt;
+&lt;p&gt;　　我比较对人像有研究，经过几次的人像体验（汉服，妈咪的几次模特秀，春燕的欢乐谷之行），还是比较喜欢人像的。体验这个交流一的过程，比较大胆的表现自己的想法，不要他拘谨，综合自己和模特的意见，一起拍摄出完美的照片。  &lt;/p&gt;
+
+&lt;p&gt;　　他从美国回来之后，就对风光摄影非常有研究，特别是后期LR和PS的运用方面，真的挺有自己的个性的。  &lt;/p&gt;
+
+&lt;p&gt;　　一直都非常喜欢建筑摄影，所以这次他带我去了爬楼，目标是望京SOHO。  &lt;/p&gt;
+
+&lt;p&gt;　　这次我比较大胆，偷偷进入小区的时候，还是没有太胆怯的，因为我只是来摄影的，并不是做什么坏事。一开始，我们遇到瓶颈，在融科·橄榄城的时候，每一个小区入口都站着一个保安，实在没有办法进去（这个是我们的首选）。在我们快要放弃，打算只在地上拍一下算了。毕竟这么老远跑过来，还是争取一下吧。所以就去了第二选择。这个小区没有太严格，我们就跟着前面的一对母女“入侵”这个小区，大大咧咧地走了进去。完全没有感觉嘛。问题来了，进楼有门禁的。所以，在旁边的椅子上等待进楼的目标。嘿嘿，还是温大师眼力比较好，有个女的进楼了，我们赶紧跑过去。我是那个女的，肯定以为那两个猥琐男对自己有想法了。
+ 　　结果就这样进来了，中间发生了一小段插曲。有个大爷听到我们搬东西的声音，就赶走我们了。这就体现了南北方的差异了，如果在南方的住宅区里面，就几乎不管你啦。北京人比较较真。  &lt;/p&gt;
+
+&lt;p&gt;　　能够成功爬楼，非常有成就感的说。接下来我们还打算国贸，银河SOHO等等…………can&amp;#39;t help succeed in taking pictures.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://ooo.0o0.ooo/2017/01/11/5875ac7589700.jpg&quot; alt=&quot;wangjingsoho&quot;&gt;&lt;/p&gt;
 </description>
       </item>
     
