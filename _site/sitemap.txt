@@ -21,4 +21,8 @@
 
   /2017/01/09/Book-List-2016.html
 
+  /2017/01/01/go-over-2016.html
+
+  /2016/10/31/monday-of-xiaozi.html
+
   /2016/08/27/wangjingSOHO.html
