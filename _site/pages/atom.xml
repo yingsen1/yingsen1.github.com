@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Wilsonの博客</title>
+    <link>http://localhost:4000</link>
+    <description>My personal blog</description>
+    
+      <item>
+        <title>2017年阅读书单</title>
+        <link>http://localhost:4000/2017/01/10/Book-List-2017.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/01/10/Book-List-2017.html</guid>
+        <pubDate>Tue, 10 Jan 2017 00:00:00 +0800</pubDate>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>KCF跟踪算法</title>
+        <link>http://localhost:4000/2017/01/10/study-kcf.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/01/10/study-kcf.html</guid>
+        <pubDate>Tue, 10 Jan 2017 00:00:00 +0800</pubDate>
+        <description>&lt;!-- ![1](/public/img/days/ca.jpg) --&gt;
+
+&lt;h3&gt;故事&lt;/h3&gt;
+
+&lt;p&gt;“人生真的是一场很长的修炼，我还处于小白阶段。”记第一次租房被耍。&lt;/p&gt;
+
+&lt;p&gt;2015.09.29补充：
+我确实是一个很幸运的人，在被奇怪的房东耍过之后，居然又开启一段神奇的际遇：在四位善良的『陌生同学』的帮助下，我在北京没有交一分钱房租而度过了大半个暑假。真的，谢谢大家。&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>麻将之战</title>
+        <link>http://localhost:4000/2017/01/10/majiang.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/01/10/majiang.html</guid>
+        <pubDate>Tue, 10 Jan 2017 00:00:00 +0800</pubDate>
+        <description>&lt;!-- ![1](/public/img/days/ca.jpg) --&gt;
+
+&lt;h3&gt;成就&lt;/h3&gt;
+
+&lt;p&gt;本来输着的，结果对大黄来了一波“豪华七小对”之后，完美逆袭，最后还小赢了一些。纯娱乐，拒绝赌博！&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>2016年阅读书单</title>
+        <link>http://localhost:4000/2017/01/09/Book-List-2016.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/01/09/Book-List-2016.html</guid>
+        <pubDate>Mon, 09 Jan 2017 00:00:00 +0800</pubDate>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>望京SOHO奇遇记</title>
+        <link>http://localhost:4000/2017/01/09/wangjingSOHO.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/01/09/wangjingSOHO.html</guid>
+        <pubDate>Mon, 09 Jan 2017 00:00:00 +0800</pubDate>
+        <description>&lt;!-- ![1](/public/img/days/ca.jpg) --&gt;
+
+&lt;h3&gt;故事&lt;/h3&gt;
+
+&lt;p&gt;“人生真的是一场很长的修炼，我还处于小白阶段。”记第一次租房被耍。&lt;/p&gt;
+
+&lt;p&gt;2015.09.29补充：
+我确实是一个很幸运的人，在被奇怪的房东耍过之后，居然又开启一段神奇的际遇：在四位善良的『陌生同学』的帮助下，我在北京没有交一分钱房租而度过了大半个暑假。真的，谢谢大家。&lt;/p&gt;
+</description>
+      </item>
+    
+  </channel>
+</rss>

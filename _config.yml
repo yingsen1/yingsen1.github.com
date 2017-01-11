@@ -1,0 +1,47 @@
+permalink: /:year/:month/:day/:title.html
+paginate: 10
+markdown: redcarpet
+
+# 作者信息
+author: 
+  name: Wilson Tsang  
+  email: yingsen_2@163.com  
+  link: yingsen1.github.io
+  weibo: http://weibo.com/yingsen
+  github: http://github.com/yingsen1
+  music: 
+  linkedin: 
+
+# 站点信息
+title: Wilsonの博客
+description: My personal blog
+url: yingsen1.github.io
+rss_url: /pages/atom.xml
+
+# gavatar头像及Favicon
+gavatar: /public/img/deer3.png
+favicon: /public/img/deer3.png
+
+# google analytics 设置
+ga:
+  id: UA-90113009-1
+  url: yingsen1.github.io
+
+# disqus 设置
+disqus:
+  shortname: yingsen1
+
+# 主题设置，自动激活某个标签
+active: 摄影
+
+# 首页除了最新文章外显示分类
+cates: 
+  - Optimization
+  - 摄影
+
+# 中文本地化
+locals:
+  tags: 标签
+  about: 关于
+  newest: 最新文章
+  archive: 归档
