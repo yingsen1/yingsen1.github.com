@@ -2,8 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
-<title>KCF跟踪算法 | Wilsonの博客</title>
+<title>目标跟踪综述2.0 | Wilsonの博客</title>
 <meta name="author" content="Wilson Tsang">
+
+  <meta name="keywords" content="深度学习 目标跟踪">
 
 
 <link rel="shortcut icon" href="/public/img/deer3.png" />
@@ -189,13 +191,95 @@
             <div class="row">
   <div class="col-md-13 aside3-title">
     <br>
-    <h2 id="#identifier">KCF跟踪算法</h2>
-    2017年01月10日
+    <h2 id="#identifier">目标跟踪综述2.0</h2>
+    2017年01月12日
   </div>
   <div class="col-md-13 aside3-content">
     <hr>
     <div id="content">
-      <!-- ![1](/public/img/days/ca.jpg) -->
+      <h1>目标跟踪综述2.0</h1>
+
+<h2>经典方法</h2>
+
+<h3>基于运动模型</h3>
+
+<ol>
+<li>meanshift</li>
+<li>slide window</li>
+<li>particle filter (develop from kalman filter)</li>
+</ol>
+
+<h3>基于特征提取</h3>
+
+<ol>
+<li><p>人工特征  </p>
+
+<p>1.1 灰度特征：Haar（区域灰度变化）  </p>
+
+<p>1.2 颜色特征：color name 特征  </p>
+
+<p>1.3 纹理特征：LBP  </p>
+
+<p>1.4 梯度特征：Hog  </p>
+
+<p>1.5 运动特征：KL光流法</p></li>
+<li><p>学习特征  </p>
+
+<p>计算机通过输入的训练集，总结出来关于目标的特征</p></li>
+<li><p>外观模型  </p>
+
+<p>3.1 产生式模型：需要先验知识。缺点：对外观刻画得比较多，缺少利用背景。
+基于模板的模型、基于子空间的模型、基于稀疏表示的模型  </p>
+
+<p>3.2 判别式模型（基于目标检测）[将目标与背景分离]
+基于SVN、基于Boosting、基于多实例学习、基于岭回归、基于随机蕨、基于朴素贝叶斯</p></li>
+<li><p>更新
+TLD模型、在线学习</p></li>
+</ol>
+
+<h2>基于深度学习的方法</h2>
+
+<h3>分类</h3>
+
+<p>1.1 监督与否  </p>
+
+<p>无监督：深度置信网络、基于自动编码器的深度网络  </p>
+
+<p>有监督：多层感知机、深度卷积神经网络  </p>
+
+<p>1.2 存在闭环与否  </p>
+
+<p>无：前馈型深度网络-FNN  </p>
+
+<p>有：递归型深度网络-RNN（LSTM：长短时记忆网络）  </p>
+
+<h3>Deep learning在目标跟踪的发展思路</h3>
+
+<p>2.1 在大规模的图像或数据集中离线训练某一特定类型的深度神经网络。跟踪时，首先将目标提取特征，在线的数据对网络进行微调。  </p>
+
+<p>2.2 简化神经网络的结构，限制网络的层数，将网络中费时的训练做适度的简化。</p>
+
+<h3>跟踪算法的测试平台</h3>
+
+<p>3.1 VTB数据集  </p>
+
+<p>3.2 VOT数据集  </p>
+
+<p>3.3 标准：
+    - 准确性：指标：偏移、误检、漏检
+    - 鲁棒性：应对复杂多样的情况
+    - 高效性：  </p>
+
+<p>3.4 精确图<br>
+3.5 成功图</p>
+
+<h3>实例</h3>
+
+<p>[65] 用于跟踪的去噪自编码器架构  </p>
+
+<p>[67] 四个基于自编码器的深度网络的集成，并微调每个编码器的权重  </p>
+
+<p>[83-84] 完全在线，预处理得到若干不同参数的局部正则化图像及梯度图像作为多通道输入。</p>
 
     </div>
     <hr>
