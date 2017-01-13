@@ -6,6 +6,14 @@
     <description>My personal blog</description>
     
       <item>
+        <title>往抵抗力最大的路径走</title>
+        <link>http://localhost:4000/2017/01/13/facied-with-adversity.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/01/13/facied-with-adversity.html</guid>
+        <pubDate>Fri, 13 Jan 2017 00:00:00 +0800</pubDate>
+        <description></description>
+      </item>
+    
+      <item>
         <title>目标跟踪综述2.0</title>
         <link>http://localhost:4000/2017/01/12/tracking-summary-2.0.html</link>
         <guid isPermaLink="true">http://localhost:4000/2017/01/12/tracking-summary-2.0.html</guid>
@@ -39,9 +47,8 @@
 &lt;li&gt;&lt;p&gt;学习特征  &lt;/p&gt;
 
 &lt;p&gt;计算机通过输入的训练集，总结出来关于目标的特征&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;外观模型  &lt;/p&gt;
-
-&lt;p&gt;3.1 产生式模型：需要先验知识。缺点：对外观刻画得比较多，缺少利用背景。
+&lt;li&gt;&lt;p&gt;外观模型&lt;br&gt;
+3.1 产生式模型：需要先验知识。缺点：对外观刻画得比较多，缺少利用背景。
 基于模板的模型、基于子空间的模型、基于稀疏表示的模型  &lt;/p&gt;
 
 &lt;p&gt;3.2 判别式模型（基于目标检测）[将目标与背景分离]
@@ -78,10 +85,13 @@ TLD模型、在线学习&lt;/p&gt;&lt;/li&gt;
 
 &lt;p&gt;3.2 VOT数据集  &lt;/p&gt;
 
-&lt;p&gt;3.3 标准：
-    - 准确性：指标：偏移、误检、漏检
-    - 鲁棒性：应对复杂多样的情况
-    - 高效性：  &lt;/p&gt;
+&lt;p&gt;3.3 标准：  &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;准确性：指标：偏移、误检、漏检&lt;/li&gt;
+&lt;li&gt;鲁棒性：应对复杂多样的情况&lt;/li&gt;
+&lt;li&gt;高效性：&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;3.4 精确图&lt;br&gt;
 3.5 成功图&lt;/p&gt;
@@ -162,6 +172,33 @@ git push origin master //简化命令
         <guid isPermaLink="true">http://localhost:4000/2017/01/10/study-kcf.html</guid>
         <pubDate>Tue, 10 Jan 2017 00:00:00 +0800</pubDate>
         <description>&lt;!-- ![1](/public/img/days/ca.jpg) --&gt;
+
+&lt;h2&gt;主要思想&lt;/h2&gt;
+
+&lt;p&gt;tracking by detaction&lt;/p&gt;
+
+&lt;h3&gt;优化&lt;/h3&gt;
+
+&lt;p&gt;对目标中心提取正样本&lt;br&gt;
+基于周围的图像，提取负样本，并根据离样本中心的远近，使用[0,1]范围的值作为样本的回归值，从而给不同偏移下得到的样本不同的权重。&lt;/p&gt;
+
+&lt;h3&gt;详细&lt;/h3&gt;
+
+&lt;p&gt;使用目标周围区域的循环矩阵采集正负样本，利用脊回归训练目标检测器，并成功的利用循环矩阵在傅里叶空间可对角化的性质，将矩阵的运算转化为向量的hadamad积，即点乘。大大降低了运算量，提高了运算速度，使算法满足实时性。&lt;/p&gt;
+
+&lt;h3&gt;优点&lt;/h3&gt;
+
+&lt;p&gt;实时性很高，速度快。&lt;/p&gt;
+
+&lt;h3&gt;缺点&lt;/h3&gt;
+
+&lt;p&gt;遮挡物对模型的影响大，如果长时间，因为遮挡物的污染，会造成训练的模型完成不符合预期。&lt;br&gt;
+不能跟踪过快的目标。因为算法中，有预定设置的padding，如果下一帧的目标超过了设定的padding，会造成循环移位的块不能够跟踪到目标，造成目标失踪，不能完成检测。&lt;/p&gt;
+
+&lt;h3&gt;参考&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.cnblogs.com/YiXiaoZhou/p/5925019.html&quot;&gt;简易说明图&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;http://blog.csdn.net/zwlq1314521/article/details/50427038&quot;&gt;算法说明详细&lt;/a&gt;&lt;/p&gt;
 </description>
       </item>
     

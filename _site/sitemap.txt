@@ -11,6 +11,8 @@
 
 
 
+  /2017/01/13/facied-with-adversity.html
+
   /2017/01/12/tracking-summary-2.0.html
 
   /2017/01/11/git-usage.html
