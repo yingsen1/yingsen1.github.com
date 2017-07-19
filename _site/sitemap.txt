@@ -13,6 +13,8 @@
 
 
 
+  /2017/07/18/tensorflow-setup.html
+
   /2017/04/03/set-up-ubuntu.html
 
   /2017/01/13/facied-with-adversity.html
