@@ -205,9 +205,12 @@ CPU：i7-6700hq
 
 &lt;p&gt;在运行程序的时候，碰到gcc版本不支持的问题。  &lt;/p&gt;
 
-&lt;p&gt;解决方案可以安装不同的gcc版本，再根据需要，进行版本的切换  &lt;/p&gt;
+&lt;p&gt;解决方案可以安装不同的gcc版本，再根据需要，进行版本的切换&lt;br&gt;
+&lt;a href=&quot;http://blog.sina.com.cn/s/blog_54dd80920102vvt6.html&quot;&gt;gcc版本切换教程&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://blog.sina.com.cn/s/blog_54dd80920102vvt6.html&quot;&gt;gcc版本切换教程&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;补充&lt;/h2&gt;
+
+&lt;p&gt;若出现PCI-ERROR等问题，在&lt;a href=&quot;https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1521173&quot;&gt;GRUB上添加代码&lt;/a&gt;即可解决。&lt;/p&gt;
 
 &lt;h3&gt;参考&lt;/h3&gt;
 
