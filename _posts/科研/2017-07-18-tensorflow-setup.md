@@ -125,7 +125,7 @@ $ sudo pip install /tmp/tensorflow_pkg/tensorflow-0.10.0rc0-py2-none-any.whl
 此时灵机一动，进入ipython之后，居然能够成功运行。  
 更神奇的是，进入python也可以运行。
 到这里就已经成功了，如果还出现问题，参考下面的三个链接。  
-180109:这个问题是出在python2/3的问题上。可以根据目录来重新修复python。还有一个问题pip目录核python目录不一致，通过用Python对应的Pip重新安装，能够解决这个问题。
+180109:这个问题是出在python2/3的问题上。[可以根据目录来重新修复python](http://zh.gluon.ai/chapter_preface/install.html#mxnet-gpu)。还有一个问题pip目录核python目录不一致，通过用Python对应的Pip重新安装，能够解决这个问题。
 
 
 
